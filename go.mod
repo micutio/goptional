@@ -1,3 +1,3 @@
-module github.com/harnyk/goptional
+module github.com/micutio/goptional
 
 go 1.18
