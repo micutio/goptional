@@ -40,8 +40,8 @@ func TestCreatePresentOptional(t *testing.T) {
 		t.Errorf("optional %v should be present!", presentOpt)
 	}
 
-	var value string = presentOpt.Get()
-	if !(value == "just an option") {
+	value := presentOpt.Get()
+	if value != "just an option" {
 		t.Errorf("optional %v should contain 'just an option', but contains '%s' instead", presentOpt, value)
 	}
 }
